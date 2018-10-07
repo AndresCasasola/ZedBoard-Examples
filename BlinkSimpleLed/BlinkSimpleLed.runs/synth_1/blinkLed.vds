@@ -1,0 +1,319 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sun Oct  7 23:34:50 2018
+# Process ID: 1383
+# Current directory: /home/andres/ZedBoard-Examples/BlinkSimpleLed/BlinkSimpleLed.runs/synth_1
+# Command line: vivado -log blinkLed.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source blinkLed.tcl
+# Log file: /home/andres/ZedBoard-Examples/BlinkSimpleLed/BlinkSimpleLed.runs/synth_1/blinkLed.vds
+# Journal file: /home/andres/ZedBoard-Examples/BlinkSimpleLed/BlinkSimpleLed.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source blinkLed.tcl -notrace
+Command: synth_design -top blinkLed -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 1442 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1268.285 ; gain = 79.887 ; free physical = 107 ; free virtual = 5076
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'blinkLed' [/home/andres/ZedBoard-Examples/BlinkSimpleLed/BlinkSimpleLed.srcs/sources_1/new/blinkLed.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'blinkLed' (1#1) [/home/andres/ZedBoard-Examples/BlinkSimpleLed/BlinkSimpleLed.srcs/sources_1/new/blinkLed.vhd:24]
+WARNING: [Synth 8-3331] design blinkLed has unconnected port button
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1312.910 ; gain = 124.512 ; free physical = 153 ; free virtual = 5089
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1312.910 ; gain = 124.512 ; free physical = 155 ; free virtual = 5092
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1312.910 ; gain = 124.512 ; free physical = 155 ; free virtual = 5092
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/andres/zedboard_master_XDC_RevC_D_v3.xdc]
+WARNING: [Vivado 12-584] No ports matched 'leds[7]'. [/home/andres/zedboard_master_XDC_RevC_D_v3.xdc:182]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/andres/zedboard_master_XDC_RevC_D_v3.xdc:182]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'leds[6]'. [/home/andres/zedboard_master_XDC_RevC_D_v3.xdc:183]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/andres/zedboard_master_XDC_RevC_D_v3.xdc:183]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'leds[5]'. [/home/andres/zedboard_master_XDC_RevC_D_v3.xdc:184]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/andres/zedboard_master_XDC_RevC_D_v3.xdc:184]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'leds[4]'. [/home/andres/zedboard_master_XDC_RevC_D_v3.xdc:185]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/andres/zedboard_master_XDC_RevC_D_v3.xdc:185]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'leds[3]'. [/home/andres/zedboard_master_XDC_RevC_D_v3.xdc:186]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/andres/zedboard_master_XDC_RevC_D_v3.xdc:186]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'leds[2]'. [/home/andres/zedboard_master_XDC_RevC_D_v3.xdc:187]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/andres/zedboard_master_XDC_RevC_D_v3.xdc:187]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'leds[1]'. [/home/andres/zedboard_master_XDC_RevC_D_v3.xdc:188]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/andres/zedboard_master_XDC_RevC_D_v3.xdc:188]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'leds[0]'. [/home/andres/zedboard_master_XDC_RevC_D_v3.xdc:189]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/andres/zedboard_master_XDC_RevC_D_v3.xdc:189]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'leds[7]'. [/home/andres/zedboard_master_XDC_RevC_D_v3.xdc:191]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/andres/zedboard_master_XDC_RevC_D_v3.xdc:191]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'leds[6]'. [/home/andres/zedboard_master_XDC_RevC_D_v3.xdc:192]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/andres/zedboard_master_XDC_RevC_D_v3.xdc:192]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'leds[5]'. [/home/andres/zedboard_master_XDC_RevC_D_v3.xdc:193]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/andres/zedboard_master_XDC_RevC_D_v3.xdc:193]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'leds[4]'. [/home/andres/zedboard_master_XDC_RevC_D_v3.xdc:194]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/andres/zedboard_master_XDC_RevC_D_v3.xdc:194]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'leds[2]'. [/home/andres/zedboard_master_XDC_RevC_D_v3.xdc:195]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/andres/zedboard_master_XDC_RevC_D_v3.xdc:195]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'leds[3]'. [/home/andres/zedboard_master_XDC_RevC_D_v3.xdc:196]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/andres/zedboard_master_XDC_RevC_D_v3.xdc:196]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'leds[1]'. [/home/andres/zedboard_master_XDC_RevC_D_v3.xdc:197]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/andres/zedboard_master_XDC_RevC_D_v3.xdc:197]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'leds[0]'. [/home/andres/zedboard_master_XDC_RevC_D_v3.xdc:198]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/andres/zedboard_master_XDC_RevC_D_v3.xdc:198]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/home/andres/zedboard_master_XDC_RevC_D_v3.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/andres/zedboard_master_XDC_RevC_D_v3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/blinkLed_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/blinkLed_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1626.887 ; gain = 0.000 ; free physical = 115 ; free virtual = 4886
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:27 ; elapsed = 00:00:59 . Memory (MB): peak = 1626.887 ; gain = 438.488 ; free physical = 153 ; free virtual = 4971
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:27 ; elapsed = 00:00:59 . Memory (MB): peak = 1626.887 ; gain = 438.488 ; free physical = 152 ; free virtual = 4972
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:59 . Memory (MB): peak = 1626.887 ; gain = 438.488 ; free physical = 150 ; free virtual = 4972
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:28 ; elapsed = 00:00:59 . Memory (MB): peak = 1626.887 ; gain = 438.488 ; free physical = 135 ; free virtual = 4962
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module blinkLed 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design blinkLed has unconnected port button
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:01:00 . Memory (MB): peak = 1626.887 ; gain = 438.488 ; free physical = 121 ; free virtual = 4951
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:01:19 . Memory (MB): peak = 1631.887 ; gain = 443.488 ; free physical = 105 ; free virtual = 4787
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:01:19 . Memory (MB): peak = 1631.887 ; gain = 443.488 ; free physical = 105 ; free virtual = 4788
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:01:19 . Memory (MB): peak = 1641.902 ; gain = 453.504 ; free physical = 116 ; free virtual = 4783
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:42 ; elapsed = 00:01:20 . Memory (MB): peak = 1641.902 ; gain = 453.504 ; free physical = 115 ; free virtual = 4784
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:42 ; elapsed = 00:01:20 . Memory (MB): peak = 1641.902 ; gain = 453.504 ; free physical = 115 ; free virtual = 4784
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:42 ; elapsed = 00:01:20 . Memory (MB): peak = 1641.902 ; gain = 453.504 ; free physical = 115 ; free virtual = 4784
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:42 ; elapsed = 00:01:20 . Memory (MB): peak = 1641.902 ; gain = 453.504 ; free physical = 115 ; free virtual = 4784
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:42 ; elapsed = 00:01:20 . Memory (MB): peak = 1641.902 ; gain = 453.504 ; free physical = 115 ; free virtual = 4784
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:42 ; elapsed = 00:01:20 . Memory (MB): peak = 1641.902 ; gain = 453.504 ; free physical = 115 ; free virtual = 4784
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     7|
+|3     |LUT4   |    25|
+|4     |LUT5   |     2|
+|5     |LUT6   |     7|
+|6     |FDCE   |    27|
+|7     |FDRE   |     1|
+|8     |IBUF   |     2|
+|9     |OBUF   |     1|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    73|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:42 ; elapsed = 00:01:20 . Memory (MB): peak = 1641.902 ; gain = 453.504 ; free physical = 115 ; free virtual = 4784
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:36 . Memory (MB): peak = 1641.902 ; gain = 139.527 ; free physical = 171 ; free virtual = 4842
+Synthesis Optimization Complete : Time (s): cpu = 00:00:43 ; elapsed = 00:01:20 . Memory (MB): peak = 1641.910 ; gain = 453.504 ; free physical = 170 ; free virtual = 4842
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+14 Infos, 18 Warnings, 16 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:46 ; elapsed = 00:01:23 . Memory (MB): peak = 1648.902 ; gain = 460.617 ; free physical = 163 ; free virtual = 4839
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint '/home/andres/ZedBoard-Examples/BlinkSimpleLed/BlinkSimpleLed.runs/synth_1/blinkLed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file blinkLed_utilization_synth.rpt -pb blinkLed_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.17 ; elapsed = 00:00:00.30 . Memory (MB): peak = 1648.902 ; gain = 0.000 ; free physical = 164 ; free virtual = 4859
+INFO: [Common 17-206] Exiting Vivado at Sun Oct  7 23:36:26 2018...

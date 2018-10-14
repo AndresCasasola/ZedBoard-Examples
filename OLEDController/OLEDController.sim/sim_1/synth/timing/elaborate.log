@@ -1,0 +1,32 @@
+Vivado Simulator 2015.1
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.1/bin/unwrapped/win64.o/xelab.exe -wto c288fe6717dd4fe28ad1cb931fab8921 --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot PmodOLEDCtrl_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 xil_defaultlib.PmodOLEDCtrl xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.SpiCtrl [spictrl_default]
+Compiling architecture behavioral of entity xil_defaultlib.Delay [delay_default]
+Compiling architecture behavioral of entity xil_defaultlib.OledInit [oledinit_default]
+Compiling module simprims_ver.GND
+Compiling module simprims_ver.RB18_INTERNAL_VLOG(DOA_REG=0,DOB...
+Compiling module simprims_ver.RAMB18E1(INIT_08=256'b0100100001...
+Compiling module xil_defaultlib.charLib_blk_mem_gen_prim_wrapper...
+Compiling module xil_defaultlib.charLib_blk_mem_gen_prim_width
+Compiling module xil_defaultlib.charLib_blk_mem_gen_generic_cstr
+Compiling module xil_defaultlib.charLib_blk_mem_gen_top
+Compiling module xil_defaultlib.charLib_blk_mem_gen_v8_2_synth
+Compiling module xil_defaultlib.charLib_blk_mem_gen_v8_2
+Compiling module xil_defaultlib.charLib
+Compiling architecture behavioral of entity xil_defaultlib.OledEx [oledex_default]
+Compiling architecture behavioral of entity xil_defaultlib.pmodoledctrl
+Waiting for 4 sub-compilation(s) to finish...
+Built simulation snapshot PmodOLEDCtrl_time_synth

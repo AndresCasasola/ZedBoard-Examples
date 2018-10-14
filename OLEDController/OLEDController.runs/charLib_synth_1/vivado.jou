@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Oct 12 15:06:03 2018
+# Process ID: 21270
+# Current directory: /home/andres/ZedBoard-Proyects/Nexys4OLEDdemo2/Nexys4OLEDdemo.runs/charLib_synth_1
+# Command line: vivado -log charLib.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source charLib.tcl
+# Log file: /home/andres/ZedBoard-Proyects/Nexys4OLEDdemo2/Nexys4OLEDdemo.runs/charLib_synth_1/charLib.vds
+# Journal file: /home/andres/ZedBoard-Proyects/Nexys4OLEDdemo2/Nexys4OLEDdemo.runs/charLib_synth_1/vivado.jou
+#-----------------------------------------------------------
+source charLib.tcl -notrace

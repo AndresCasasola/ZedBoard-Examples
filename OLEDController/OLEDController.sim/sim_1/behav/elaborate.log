@@ -1,0 +1,30 @@
+Vivado Simulator 2015.1
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.1/bin/unwrapped/win64.o/xelab.exe -wto c288fe6717dd4fe28ad1cb931fab8921 --debug typical --relax --mt 2 -L blk_mem_gen_v8_2 -L xil_defaultlib -L secureip --snapshot PmodOLEDCtrl_behav xil_defaultlib.PmodOLEDCtrl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package ieee.std_logic_textio
+Compiling architecture behavioral of entity xil_defaultlib.SpiCtrl [spictrl_default]
+Compiling architecture behavioral of entity xil_defaultlib.Delay [delay_default]
+Compiling architecture behavioral of entity xil_defaultlib.OledInit [oledinit_default]
+Compiling architecture output_stage_behavioral of entity blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_output_stage [\BLK_MEM_GEN_v8_2_output_stage("...]
+Compiling architecture softecc_output_reg_stage_behavioral of entity blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_softecc_output_reg_stage [\BLK_MEM_GEN_v8_2_softecc_output...]
+Compiling architecture mem_module_behavioral of entity blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_mem_module [\BLK_MEM_GEN_v8_2_mem_module("bl...]
+Compiling architecture behavioral of entity blk_mem_gen_v8_2.blk_mem_gen_v8_2 [\blk_mem_gen_v8_2("blk_mem_gen_v...]
+Compiling architecture charlib_arch of entity xil_defaultlib.charLib [charlib_default]
+Compiling architecture behavioral of entity xil_defaultlib.OledEx [oledex_default]
+Compiling architecture behavioral of entity xil_defaultlib.pmodoledctrl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot PmodOLEDCtrl_behav

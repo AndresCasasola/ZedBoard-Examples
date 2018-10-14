@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/andres/ZynqProyects/FirstProyect/FirstProyect.runs/synth_1'
+HD_PWD='/home/andres/ZedBoard-Examples/BlinkArrayLeds/BlinkArrayLeds.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

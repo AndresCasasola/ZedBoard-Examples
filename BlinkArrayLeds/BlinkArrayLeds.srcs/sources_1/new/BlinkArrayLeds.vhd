@@ -28,16 +28,14 @@ constant max_count : natural := 20000000;  -- Clock source: 100MHz (T = 0.2s) - 
 begin
     
 process(clk, rst)
-    variable count : natural range 0 to max_count;  -- 
+    variable count : natural range 0 to max_count;
     variable led_to_turn : integer := 0;            -- Save the led to turn on/off
     
 begin
-    if rst = '1' then           -- Reset edge
+    if rst = '1' then               -- Reset edge
        count := 0;
        led_to_turn := 0; 
-       for i in 0 to 7 loop     -- Turn off all leds
-            leds(i) <= '0';
-       end loop;
+       leds <= "00000000";          -- Turn off all leds
     elsif rising_edge(clk) then     -- Clock edge
         if count < max_count then
             count := count + 1;
@@ -47,9 +45,7 @@ begin
                 leds(led_to_turn) <= '1';
                 led_to_turn := led_to_turn + 1;
             else
-                for i in 0 to 7 loop
-                    leds(i) <= '0';
-                end loop;
+                leds <= "00000000";
                 led_to_turn := 0;
             end if;        
         end if;

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sun Oct 14 17:03:35 2018
+# Process ID: 11020
+# Current directory: /home/andres/ZedBoard-Examples/BlinkArrayLeds/BlinkArrayLeds.runs/impl_1
+# Command line: vivado -log blinkLed.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source blinkLed.tcl -notrace
+# Log file: /home/andres/ZedBoard-Examples/BlinkArrayLeds/BlinkArrayLeds.runs/impl_1/blinkLed.vdi
+# Journal file: /home/andres/ZedBoard-Examples/BlinkArrayLeds/BlinkArrayLeds.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source blinkLed.tcl -notrace

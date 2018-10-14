@@ -1,0 +1,10 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Work/Vivado/15.1/Nexys4OLEDdemo/Nexys4OLEDdemo.srcs/sources_1/imports/PmodOLED_Source/SpiCtrl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity SpiCtrl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Work/Vivado/15.1/Nexys4OLEDdemo/Nexys4OLEDdemo.srcs/sources_1/imports/PmodOLED_Source/Delay.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Delay
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Work/Vivado/15.1/Nexys4OLEDdemo/Nexys4OLEDdemo.srcs/sources_1/imports/PmodOLED_Source/OledExample.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity OledEx
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Work/Vivado/15.1/Nexys4OLEDdemo/Nexys4OLEDdemo.srcs/sources_1/imports/PmodOLED_Source/OledInit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity OledInit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Work/Vivado/15.1/Nexys4OLEDdemo/Nexys4OLEDdemo.srcs/sources_1/imports/PmodOLED_Source/PmodOLEDCtrl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PmodOLEDCtrl

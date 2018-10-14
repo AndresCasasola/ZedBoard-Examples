@@ -17,22 +17,19 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param xicom.use_bs_reader 1
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7z020clg484-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir /home/andres/ZynqProyects/FirstProyect/FirstProyect.cache/wt [current_project]
-set_property parent.project_path /home/andres/ZynqProyects/FirstProyect/FirstProyect.xpr [current_project]
+set_property webtalk.parent_dir /home/andres/ZedBoard-Examples/BlinkArrayLeds/BlinkArrayLeds.cache/wt [current_project]
+set_property parent.project_path /home/andres/ZedBoard-Examples/BlinkArrayLeds/BlinkArrayLeds.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part em.avnet.com:zed:part0:1.4 [current_project]
-set_property ip_output_repo /home/andres/ZynqProyects/FirstProyect/FirstProyect.cache/ip [current_project]
+set_property ip_output_repo /home/andres/ZedBoard-Examples/BlinkArrayLeds/BlinkArrayLeds.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_vhdl -library xil_defaultlib /home/andres/ZynqProyects/FirstProyect/FirstProyect.srcs/sources_1/new/blinkLed.vhd
+read_vhdl -library xil_defaultlib /home/andres/ZedBoard-Examples/BlinkArrayLeds/BlinkArrayLeds.srcs/sources_1/new/BlinkArrayLeds.vhd
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
 # design are intentionally left as such for best results. Dcp files will be

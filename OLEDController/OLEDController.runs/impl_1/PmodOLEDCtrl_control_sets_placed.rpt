@@ -1,0 +1,99 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Sun Oct 14 14:58:21 2018
+| Host         : andres-X555LA running 64-bit Ubuntu 18.04.1 LTS
+| Command      : report_control_sets -verbose -file PmodOLEDCtrl_control_sets_placed.rpt
+| Design       : PmodOLEDCtrl
+| Device       : xc7z020
+-----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    29 |
+| Unused register locations in slices containing registers |    98 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            2 |
+|      6 |            2 |
+|      8 |            5 |
+|     10 |            8 |
+|     12 |            1 |
+|     14 |            1 |
+|    16+ |           10 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              26 |            7 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             102 |           14 |
+| Yes          | No                    | No                     |             140 |           28 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             122 |           19 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+-----------------------------------------------------------+----------------------------------------------+------------------+----------------+
+|  Clock Signal  |                       Enable Signal                       |               Set/Reset Signal               | Slice Load Count | Bel Load Count |
++----------------+-----------------------------------------------------------+----------------------------------------------+------------------+----------------+
+|  CLK_IBUF_BUFG | Init/temp_vdd_i_1_n_0                                     |                                              |                1 |              2 |
+|  CLK_IBUF_BUFG | Init/temp_vbat_i_1_n_0                                    |                                              |                1 |              2 |
+|  CLK_IBUF_BUFG | Example/DELAY_COMP/FSM_onehot_current_state[3]_i_1__1_n_0 | RST_IBUF                                     |                1 |              6 |
+|  CLK_IBUF_BUFG | Init/DELAY_COMP/FSM_onehot_current_state[3]_i_1__0_n_0    | RST_IBUF                                     |                1 |              6 |
+|  CLK_IBUF_BUFG | Init/E[0]                                                 | RST_IBUF                                     |                1 |              8 |
+|  CLK_IBUF_BUFG | Example/temp_spi_data[5]_i_1_n_0                          | Example/temp_spi_data[7]_i_1_n_0             |                1 |              8 |
+|  CLK_IBUF_BUFG | Example/temp_spi_data[5]_i_1_n_0                          |                                              |                2 |              8 |
+|  CLK_IBUF_BUFG | Example/after_page_state                                  | Example/after_page_state[4]_i_1_n_0          |                1 |              8 |
+|  CLK_IBUF_BUFG | Example/after_char_state                                  | Example/temp_index[3]_i_1_n_0                |                2 |              8 |
+|  CLK_IBUF_BUFG |                                                           | Init/SPI_COMP/counter                        |                1 |             10 |
+|  CLK_IBUF_BUFG | Example/g0_b0__3_n_0                                      |                                              |                1 |             10 |
+|  CLK_IBUF_BUFG | Example/SPI_COMP/E[0]                                     |                                              |                4 |             10 |
+|  CLK_IBUF_BUFG | Example/SPI_COMP/temp_sdo                                 | Example/SPI_COMP/SR[0]                       |                2 |             10 |
+|  CLK_IBUF_BUFG | Init/DELAY_COMP/E[0]                                      | RST_IBUF                                     |                2 |             10 |
+|  CLK_IBUF_BUFG | Init/g0_b0__1_n_0                                         |                                              |                2 |             10 |
+|  CLK_IBUF_BUFG | Init/SPI_COMP/temp_sdo                                    | Init/SPI_COMP/shift_counter[3]_i_1__0_n_0    |                2 |             10 |
+|  CLK_IBUF_BUFG |                                                           | Example/SPI_COMP/counter                     |                1 |             10 |
+|  CLK_IBUF_BUFG | Example/after_update_state                                |                                              |                1 |             12 |
+|  CLK_IBUF_BUFG |                                                           | RST_IBUF                                     |                2 |             14 |
+|  CLK_IBUF_BUFG | Example/SPI_COMP/shift_register                           |                                              |                2 |             16 |
+|  CLK_IBUF_BUFG | Init/g0_b0__2_n_0                                         |                                              |                2 |             16 |
+|  CLK_IBUF_BUFG | Init/SPI_COMP/shift_register_0                            |                                              |                2 |             16 |
+|  CLK_IBUF_BUFG | Example/after_char_state                                  |                                              |                8 |             18 |
+|  CLK_IBUF_BUFG | Example/g0_b0__4_n_0                                      |                                              |                2 |             20 |
+|  CLK_IBUF_BUFG | Example/DELAY_COMP/ms_counter[0]_i_2__0_n_0               | Example/DELAY_COMP/ms_counter                |                3 |             24 |
+|  CLK_IBUF_BUFG | Init/DELAY_COMP/ms_counter[0]_i_2_n_0                     | Init/DELAY_COMP/ms_counter                   |                3 |             24 |
+|  CLK_IBUF_BUFG |                                                           |                                              |                7 |             26 |
+|  CLK_IBUF_BUFG |                                                           | Example/DELAY_COMP/clk_counter[0]_i_1__0_n_0 |                5 |             34 |
+|  CLK_IBUF_BUFG |                                                           | Init/DELAY_COMP/clk_counter[0]_i_1_n_0       |                5 |             34 |
++----------------+-----------------------------------------------------------+----------------------------------------------+------------------+----------------+
+
+

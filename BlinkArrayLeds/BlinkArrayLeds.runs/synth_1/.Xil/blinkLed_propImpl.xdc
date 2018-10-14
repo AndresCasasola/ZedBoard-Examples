@@ -21,3 +21,7 @@ set_property src_info {type:XDC file:1 line:198 export:INPUT save:INPUT read:REA
 set_property PACKAGE_PIN T22 [get_ports {leds[0]}]
 set_property src_info {type:XDC file:1 line:201 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN N15 [get_ports rst]
+set_property src_info {type:XDC file:1 line:205 export:INPUT save:INPUT read:READ} [current_design]
+set_property IOSTANDARD LVCMOS33 [get_ports led]
+set_property src_info {type:XDC file:1 line:206 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN T22 [get_ports led]

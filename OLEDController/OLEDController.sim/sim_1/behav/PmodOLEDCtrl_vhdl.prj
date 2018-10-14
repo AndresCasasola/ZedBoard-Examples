@@ -1,0 +1,11 @@
+# compile vhdl design source files
+vhdl blk_mem_gen_v8_2  "../../../Nexys4OLEDdemo.srcs/sources_1/ip/charLib/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.vhd"
+vhdl xil_defaultlib  "../../../Nexys4OLEDdemo.srcs/sources_1/ip/charLib/sim/charLib.vhd"
+vhdl xil_defaultlib  "../../../Nexys4OLEDdemo.srcs/sources_1/imports/PmodOLED_Source/SpiCtrl.vhd"
+vhdl xil_defaultlib  "../../../Nexys4OLEDdemo.srcs/sources_1/imports/PmodOLED_Source/Delay.vhd"
+vhdl xil_defaultlib  "../../../Nexys4OLEDdemo.srcs/sources_1/imports/PmodOLED_Source/OledExample.vhd"
+vhdl xil_defaultlib  "../../../Nexys4OLEDdemo.srcs/sources_1/imports/PmodOLED_Source/OledInit.vhd"
+vhdl xil_defaultlib  "../../../Nexys4OLEDdemo.srcs/sources_1/imports/PmodOLED_Source/PmodOLEDCtrl.vhd"
+
+# Do not sort compile order
+nosort

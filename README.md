@@ -3,7 +3,7 @@
 ZedBoard´s first examples to getting started with vivado and vhdl programing
 
 <p align="center">
-  <img width="500" height="349" src="https://github.com/AndresCasasola/ZedBoard-Examples/raw/master/Resources/Images/zedboard.jpg">
+  <img width="600" height="449" src="https://github.com/AndresCasasola/ZedBoard-Examples/raw/master/Resources/Images/zedboard.jpg">
 </p>
 
 ## Order to test the projects:

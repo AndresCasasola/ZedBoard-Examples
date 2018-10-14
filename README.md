@@ -2,7 +2,7 @@
 
 ZedBoard´s first examples to getting started with vivado and vhdl programing
 
-![ZedBoard](https://github.com/AndresCasasola/ZedBoard-Examples/Resources/Images/zedboard.jpg)
+![ZedBoard](https://github.com/AndresCasasola/ZedBoard-Examples/raw/master/Resources/Images/zedboard.jpg)
 
 ## Order to test the projects:
 
@@ -21,13 +21,21 @@ ZedBoard´s first examples to getting started with vivado and vhdl programing
 - This example uses files developed by Digilent (SpiCtrl, Delay, OledInit, OledExample, PmodOLEDCtrl),  all in VHDL. 
 - Constaints are configured for zedboard by me. "*OledInit.vhd*" is modified to adjust the Oled screen resolution (128x32) and configure the screen layout in the most natural orientation (Like the logos and words printed in the board).
 - Here is the file´s hierarchy in this project:
-![OLEDController Hierarchy](https://github.com/AndresCasasola/ZedBoard-Examples/Resources/Images/oled_hierarchy.png)
 
-- The main file is *PmodOLEDCtrl*, it contains *OledInit* and *OledExample*. Each one of them contains an *SpiCtrl* module to send commands and data to the OLED. *OledInit* is used to initialize the OLED screen with configurations as contrast, power on, resolution, layout... *OledExample* is used to send the display data (the text that we want to show) once the OLED is configured and ready to display out.
+<p align="center">
+  <img width="428" height="193" src="https://github.com/AndresCasasola/ZedBoard-Examples/raw/master/Resources/Images/oled_hierarchy.png">
+</p>
+
+- The main file is *PmodOLEDCtrl*, it contains *OledInit* and *OledExample*. Each one of them contains an *SpiCtrl* module to send commands and data to the Oled. *OledInit* is used to initialize the OLED screen with configurations as contrast, power on, resolution, layout... *OledExample* is used to send the display data (the text that we want to show) once the Oled is configured and ready to display out. The delay module is used to obtain a time delay for spi comunnications.
 
 
 
+# References:
 
+1. OLEDController files got from this [repository](https://github.com/faab64/OLED_on_ZedBoard). [2018, October]
+2. Spi Oled driver datasheet: [SSD1306](https://github.com/AndresCasasola/ZedBoard-Examples/raw/master/Resources/Documentation).
+3. Quick hardware information about ZedBoard: [Hardware User Guide](https://github.com/AndresCasasola/ZedBoard-Examples/raw/master/Resources/Documentation).
+4. Deep information about ZedBoard: [Technical Reference Manual](https://github.com/AndresCasasola/ZedBoard-Examples/raw/master/Resources/Documentation).
 
 
 

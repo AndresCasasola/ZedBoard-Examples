@@ -2,7 +2,9 @@
 
 ZedBoard´s first examples to getting started with vivado and vhdl programing
 
-![ZedBoard](https://github.com/AndresCasasola/ZedBoard-Examples/raw/master/Resources/Images/zedboard.jpg)
+<p align="center">
+  <img width="500" height="349" src="https://github.com/AndresCasasola/ZedBoard-Examples/raw/master/Resources/Images/zedboard.jpg">
+</p>
 
 ## Order to test the projects:
 
@@ -23,7 +25,7 @@ ZedBoard´s first examples to getting started with vivado and vhdl programing
 - Here is the file´s hierarchy in this project:
 
 <p align="center">
-  <img width="428" height="193" src="https://github.com/AndresCasasola/ZedBoard-Examples/raw/master/Resources/Images/oled_hierarchy.png">
+  <img width="428" height="151" src="https://github.com/AndresCasasola/ZedBoard-Examples/raw/master/Resources/Images/oled_hierarchy.png">
 </p>
 
 - The main file is *PmodOLEDCtrl*, it contains *OledInit* and *OledExample*. Each one of them contains an *SpiCtrl* module to send commands and data to the Oled. *OledInit* is used to initialize the OLED screen with configurations as contrast, power on, resolution, layout... *OledExample* is used to send the display data (the text that we want to show) once the Oled is configured and ready to display out. The delay module is used to obtain a time delay for spi comunnications.
@@ -33,9 +35,9 @@ ZedBoard´s first examples to getting started with vivado and vhdl programing
 # References:
 
 1. OLEDController files got from this [repository](https://github.com/faab64/OLED_on_ZedBoard). [2018, October]
-2. Spi Oled driver datasheet: [SSD1306](https://github.com/AndresCasasola/ZedBoard-Examples/raw/master/Resources/Documentation).
-3. Quick hardware information about ZedBoard: [Hardware User Guide](https://github.com/AndresCasasola/ZedBoard-Examples/raw/master/Resources/Documentation).
-4. Deep information about ZedBoard: [Technical Reference Manual](https://github.com/AndresCasasola/ZedBoard-Examples/raw/master/Resources/Documentation).
+2. Spi Oled driver datasheet: [SSD1306](https://github.com/AndresCasasola/ZedBoard-Examples/raw/master/Resources/Documentation/SSD1306_Datasheet_for_096_OLED.pdf).
+3. Quick hardware information about ZedBoard: [Hardware User Guide](https://github.com/AndresCasasola/ZedBoard-Examples/raw/master/Resources/Documentation/zedboard_ug.pdf).
+4. Deep information about ZedBoard: [Technical Reference Manual](https://github.com/AndresCasasola/ZedBoard-Examples/raw/master/Resources/Documentation/ug585-Zynq-7000-Technical_Reference_Manual.pdf).
 
 
 
